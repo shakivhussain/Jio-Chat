@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/ch_searchBtn"
+        android:icon="@drawable/ic_baseline_search"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/ch_contact"
+        android:icon="@drawable/ic_baseline_contacts"
+        android:title="Contact"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/ch_brMsg"
+        android:title="Broadcast Message"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/ch_inviteFrnd"
+        android:title="Invite Freinds"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/ch_scanQr"
+        android:title="Scan QR Code"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/ch_ViewPr"
+        android:title="View Profile"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/ch_setting"
+        android:title="Settings"
+        app:showAsAction="ifRoom" />
+
+</menu>

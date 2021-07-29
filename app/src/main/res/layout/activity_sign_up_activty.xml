@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.SignUpActivty">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle"
+            android:padding="16dp"
+            android:src="@drawable/ic_baseline_jio_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="JioChat"
+            android:textColor="@color/black"
+            android:textSize="32dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/countyTextIL"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTvDT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/countryhelperTvDT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:maxLength="18"
+                android:maxLines="1"
+                android:text="🇮🇳  +91 India"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/countyTextIL"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etNumberDL"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Mobile Number"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="110dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLength="14" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You'll recieve OTP on this mobile number"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_condition"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/MediumPersianBlue"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/MediumPersianBlue"
+            android:textSize="16dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:onClick="Next"
+            android:backgroundTint="@color/MediumPersianBlueAccent"
+            android:textAllCaps="false"
+            android:layout_marginBottom="15dp"
+            android:text="Accept and Continue"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="15dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:paddingLeft="32dp"-->
+    <!--        android:paddingRight="32dp">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Country"-->
+    <!--            android:textSize="14dp" />-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+
+    <!--            <com.google.android.material.textfield.TextInputLayout-->
+    <!--                android:id="@+id/countyTextIL"-->
+    <!--               android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:gravity="start"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent">-->
+
+
+    <!--                <AutoCompleteTextView-->
+    <!--                    android:id="@+id/autoCompleteTvDT"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:enabled="false"-->
+    <!--                    android:inputType="none" />-->
+    <!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/countryhelperTvDT"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="52dp"-->
+    <!--                android:layout_marginLeft="52dp"-->
+    <!--                android:maxLength="18"-->
+    <!--                android:maxLines="1"-->
+    <!--                android:text="+91 India"-->
+    <!--                android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+    <!--                android:textSize="18dp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="@+id/countyTextIL"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:orientation="vertical">-->
+
+    <!--                <com.google.android.material.textfield.TextInputLayout-->
+    <!--                    android:id="@+id/etName"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:hint="Username"-->
+    <!--                    app:counterEnabled="true"-->
+    <!--                    app:counterMaxLength="20"-->
+    <!--                    app:endIconMode="clear_text"-->
+    <!--                    app:endIconTint="@color/purple_700"-->
+    <!--                    app:errorEnabled="true"-->
+    <!--                    app:startIconTint="@color/purple_700"-->
+    <!--                    tools:layout_editor_absoluteX="1dp"-->
+    <!--                    tools:layout_editor_absoluteY="110dp">-->
+
+    <!--                    <com.google.android.material.textfield.TextInputEditText-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:maxLength="20" />-->
+
+    <!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--            </LinearLayout>-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--    </LinearLayout>-->
+
+</LinearLayout>

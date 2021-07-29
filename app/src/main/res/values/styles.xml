@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.App" parent="MaterialAlertDialog.MaterialComponents.Title.Icon">
+        ...
+        <item name="switchStyle">@style/Widget.App.Switch</item>
+    </style>
+
+    <style name="Widget.App.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Switch</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Switch" parent="">
+        <item name="colorOnSurface">@color/MediumPersianBlue</item>
+        <item name="colorSecondary">@color/MediumPersianBlueDarkDark</item>
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        // for toolbar
+        <item name="colorPrimary">@color/ColorPrimary</item>
+        // for status bar
+        <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
+        // for edit text cursor etc
+        <item name="colorAccent">@color/MediumPersianBlueAccent</item>
+        // important
+        <item name="windowNoTitle">true</item>
+
+
+    </style>
+
+
+    <style name="editTextStyle" parent="">
+        <item name="android:layout_marginLeft">3dp</item>
+    </style>
+
+</resources>

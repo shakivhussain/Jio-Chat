@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:lineSpacingExtra="3dp"
+    android:minHeight="45dp"
+    android:minLines="1"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/countryFlagTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        tools:text="AF" />
+
+    <TextView
+        android:id="@+id/countryNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:maxLength="15"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/countryFlagTv"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:text="Country Name" />
+
+
+    <TextView
+        android:id="@+id/countryCodeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:text="+91" />
+
+
+</RelativeLayout>

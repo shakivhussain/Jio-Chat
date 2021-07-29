@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SQlite Database Operations</string>
+    <string name="terms_condition"><u>Terms &amp; Condition</u></string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+</resources>

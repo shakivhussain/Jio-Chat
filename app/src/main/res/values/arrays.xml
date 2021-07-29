@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="array_country_code_options">
+
+
+        <item>"Shakib"</item>
+        <item>"Shakib"</item>
+        <item>"Shakib"</item>
+        <item>"Shakib"</item>
+        <item>"Shakib"</item>
+        <item>"Shakib"</item>
+
+
+    </string-array>
+
+
+</resources>
